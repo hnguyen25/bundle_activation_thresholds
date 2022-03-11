@@ -1,3 +1,8 @@
-# RGC Bundle Activation
+# Retinal Ganglion Cell (RGC) Bundle Activation Threshold Detection Algorithm
 
+## Description of algorithm
 Axon bundle activation thresholds were determined by an automated method based on a previously described algorithm (Tandon et al. 2021), modified accordingly to avoid bias resulting from differences in array geometries (this work used a smaller, hexagonal array whereas the algorithm described in Tandon et al. 2021 was developed using a larger, rectangular array) and axon spike amplitude differences between central and peripheral RGCs. For each preparation, a threshold voltage was first determined to assign electrodes as recording significant axonal signals in response to electrical stimulation. For each RGC recorded during white noise visual stimulation, the electrodes recording axonal signals were identified as described above and the average axonal spike amplitude was determined. The median axonal spike amplitude across all recorded RGCs was computed and was taken to be the threshold voltage. Next, to determine the bundle activation threshold, for each stimulus current applied, electrodes were first identified as either activated or inactivated, depending on whether the recorded signal was above the threshold voltage. Activity on the array was identified as an axon bundle activation event when the activated electrodes resulted in a contiguous path reaching at least two non-adjacent edges of the electrode array. The bundle activation threshold, therefore, is defined as the minimum stimulation current at which a bundle event was evoked, through a binary search over all the applied current amplitudes.
+
+## Getting started
+
+View instructions for running code in v1_final/bundle_algorithm_v1.0.ipynb
